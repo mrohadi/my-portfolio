@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
-    <!-- Put here your site title -->
+    <!-- Site title -->
     <title>Muhammad Rohadi | Developer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="mrohadi, Muhammad Rohadi, skill" />
-    <!-- Improve your SEO by adding a small descrption of you -->
+    <!-- Improve  SEO by adding a small descrption -->
     <meta name="description" content="Muhammad Rohadi | Developer" />
 
     <!-- Required librarys -->
@@ -27,7 +27,6 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
@@ -43,10 +42,11 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link"><span>1. </span>About Me</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>2. </span>Projects</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>3. </span>Contact Me</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"><span>4. </span>Social Media</a></li>
+                <li id="aboutNav" class="navigation__item"><a target="_blank" href="#about" class="navigation__link"><span>1. </span>About Me</a></li>
+                <li id="projectsNav" class="navigation__item"><a href="#projects" class="navigation__link"><span>2. </span>Projects</a></li>
+                <li id="skillNav" class="navigation__item"><a href="#skills" class="navigation__link"><span>3. </span>Technical Skills</a></li>
+                <li id="contactNav" class="navigation__item"><a href="#contact" class="navigation__link"><span>4. </span>Contact Me</a></li>
+                <li id="socialNav" class="navigation__item"><a href="#social" class="navigation__link"><span>5. </span>Social Media</a></li>
             </ul>
         </nav>
     </div>
@@ -56,7 +56,7 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Muhammd Rohadi</span>
+          Hi, my name is <span class="text-color-main">Muhammad Rohadi</span>
           <br />
           I'm a Full-Stack Developer.
         </h1>
@@ -100,7 +100,7 @@
                 fuga numquam voluptate architecto itaque molestiae.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="#contact">
                   View Resume
                 </a>
               </span>
@@ -118,7 +118,7 @@
           <h2 class="section-title dark-blue-text">
             Projects
           </h2>
-
+          
           <!-- Each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -225,6 +225,86 @@
     </section>
     <!-- /END Projects Section -->
 
+    <!-- **** Skills Section **** -->
+    <section id="projects" class="section-features mt-4">
+      <div id="skills" class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Technical Skills
+          </h2>
+
+          <!-- Skill 1 -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <div class="feature-box">
+                  <i class="feature-box__icon icon-basic-world"></i>
+                  <h3 class="heading-tertiary u-margin-buttom-small project-wrapper__text-title">Front-end</h3>
+                  <hr class="mb-6">
+                  <div class="container feature-box__text">
+                    <div class="img-row">
+                        <img class="img" src="./assets/img/html5.png" alt="">
+                        <img class="img" src="./assets/img/css3.png" alt="">
+                        <img class="img" src="./assets/img/javascript.png" alt="">
+                        <img class="img" src="./assets/img/jquery.png" alt="">
+                        <img class="img" src="./assets/img/react.png" alt="">
+                        <img class="img" src="./assets/img/webpack.png" alt="">
+                        <img class="img" src="./assets/img/gulp.png" alt="">
+                        <img class="img" src="./assets/img/sass.png" alt="">
+                        <img class="img" src="./assets/img/bootstrap.png" alt="">
+                        <img class="img" src="./assets/img/materialui.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <div class="feature-box">
+                  <i class="feature-box__icon icon-basic-world"></i>
+                  <h3 class="heading-tertiary u-margin-buttom-small project-wrapper__text-title">Back-end</h3>
+                  <hr class="mb-6">
+                  <div class="container feature-box__text">
+                    <div class="img-row">
+                        <img class="img" src="./assets/img/nodejs.png" alt="">
+                        <img class="img" src="./assets/img/dotnet.png" alt="">
+                        <img class="img" src="./assets/img/csharp.png" alt="">
+                        <img class="img" src="./assets/img/mongodb.png" alt="">
+                        <img class="img" src="./assets/img/firebase.png" alt="">
+                        <img class="img" src="./assets/img/postgresql.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <div class="feature-box mb-4">
+                  <i class="feature-box__icon icon-basic-world"></i>
+                  <h3 class="heading-tertiary u-margin-buttom-small project-wrapper__text-title">DevOps</h3>
+                  <hr class="mb-6">
+                  <div class="container feature-box__text">
+                    <div class="img-row">
+                        <img class="img" src="./assets/img/git.png" alt="">
+                        <img class="img" src="./assets/img/github.png" alt="">
+                        <img class="img" src="./assets/img/docker.png" alt="">
+                        <img class="img" src="./assets/img/kubernetes.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Skills Section -->
+
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
@@ -247,7 +327,7 @@
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
+    <footer id="social" class="footer navbar-static-bottom">
       <div class="container">
         <a href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
@@ -267,9 +347,6 @@
           </a>
         </div>
 
-        <hr />
-
-        <!-- If you give me some credit, will be huge for me :) -->
         <p class="footer__text">
           <a href="https://github.com/mrohadi" target="_blank">Muhammad Rohadi</a>
           </a> © 2020 

@@ -1,5 +1,6 @@
 import initTilt from "./js/tilt";
 import initSr from "./js/sr";
+import navToggle from './js/nav';
 
 import "./style/main.scss";
 
@@ -18,3 +19,4 @@ $('a[href^="#"]').on("click", function (event) {
 
 initSr();
 initTilt();
+navToggle();

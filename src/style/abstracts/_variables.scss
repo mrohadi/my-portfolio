@@ -6,7 +6,13 @@ $terninary-color: #28b485;
 $black-color: #000;
 $white-color: #fff;
 
+$dark-grey-1: #777;
+$dark-grey-2: #999;
+$dark-grey-3: #333;
 $dark-grey: #333333;
+
+$grey-light-1: #f7f7f7;
+$grey-light-2: #eee;
 
 $dark-blue-text: #272341; // For Headings
 
@@ -14,3 +20,9 @@ $dark-blue-text: #272341; // For Headings
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
+
+// Declare Grid variable
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

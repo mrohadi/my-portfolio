@@ -1,0 +1,74 @@
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-color, 0.4),
+      rgba($secondary-color, 0.4)
+    ),
+    url(../assets/project.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    transform: skewY(0);
+
+    & > * {
+      transform: skewY(0);
+    }
+  }
+}
+
+.feature-box {
+  background-color: rgba($white-color, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($black-color, 0.15);
+  transition: 0.3s;
+
+  @include respond(tablet-potert) {
+    padding: 2rem;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $primary-color,
+      $secondary-color
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @include respond(tablet-potert) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+  // &__text{
+
+  // }
+}
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.img {
+  max-width: 60px;
+  margin: 8px;
+}

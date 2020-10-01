@@ -1,6 +1,6 @@
 import initTilt from "./js/tilt";
 import initSr from "./js/sr";
-import navToggle from './js/nav';
+import navToggle from "./js/nav";
 
 import "./style/main.scss";
 

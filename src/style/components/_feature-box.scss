@@ -5,22 +5,17 @@
       rgba($primary-color, 0.4),
       rgba($secondary-color, 0.4)
     ),
-    url(../assets/project.jpg);
+    url(../assets/Developer-Backgorund.jpeg);
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem;
-
-  & > * {
-    transform: skewY(7deg);
-  }
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+  padding-top: 10%;
 
   @include respond(tab-land) {
-    padding: 10rem 0;
-    transform: skewY(0);
-
-    & > * {
-      transform: skewY(0);
-    }
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
   }
 }
 
